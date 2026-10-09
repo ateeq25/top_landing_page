@@ -3,42 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>TOP Landing Page</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="/" class="logo">Header Logo</a>
 
       <nav>
-        <a href="/link1">header link one</a>
-        <a href="/link2">header link two</a>
-        <a href="/link3">header link three</a>
+        <a href="/link1" class="nav-link">header link one</a>
+        <a href="/link2" class="nav-link">header link two</a>
+        <a href="/link3" class="nav-link">header link three</a>
       </nav>
     </header>
 
-    <div class="hero-section">
+    <section class="hero">
       <div class="hero-content">
         <h1>This website is awesome</h1>
-        <p>
+        <p class="hero-subtext">
           This website has some subtext that goes here under the main title.
           It's a smaller font and the color is lower contrast
         </p>
         <a href="/work" class="cta-button">Sign up</a>
       </div>
+
       <div class="hero-image">
         <img src="hero-image.jpg" alt="Hero Image" />
       </div>
-    </div>
+    </section>
 
     <div class="content-section1">
-      <h2>Some random information.</h2>
+      <div class="section1-header">
+        <h2>Some random information.</h2>
+      </div>
       <div class="content-cards">
         <div class="card">
           <div class="card-image">
             <img src="card-image1.jpg" alt="Card Image 1" />
           </div>
           <p>
-            Some information about this card. It can be a few sentences long.
+            this is some subtext under an illustration or image
           </p>
         </div>
         <div class="card">
@@ -46,7 +50,7 @@
             <img src="card-image2.jpg" alt="Card Image 2" />
           </div>
           <p>
-            Some information about this card. It can be a few sentences long.
+            this is some subtext under an illustration or image
           </p>
         </div>
         <div class="card">
@@ -54,25 +58,38 @@
             <img src="card-image3.jpg" alt="Card Image 3" />
           </div>
           <p>
-            Some information about this card. It can be a few sentences long.
+            this is some subtext under an illustration or image
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="card-image4.jpg" alt="Card Image 4" />
+          </div>
+          <p>
+            this is some subtext under an illustration or image
           </p>
         </div>
       </div>
     </div>
 
     <div class="content-section2">
-      <h2>
+      <h2 id="quote">
         This is an inspiring quote, or a testimonial from a customer. Maybe it's
         just filling up space, or maybe people will actually read it. Who knows?
         All I know is that it looks nice.
       </h2>
-      <p>-Thor, God of Thunder</p>
+      <p id="author">-Thor, God of Thunder</p>
     </div>
 
     <div class="call-to-action">
-      <h3>Call to action! It's time!</h3>
-      <p>Sign up for our product by clicking that button right over there!</p>
-      <a href="/signup" class="cta-button-outline">Sign up</a>
+      <div class="call-to-action-content">
+      <div class="call-to-action-text">
+        <h3>Call to action! It's time!</h3>
+        <p>Sign up for our product by clicking that button right over there!</p>
+      </div>
+
+        <a href="/signup" class="cta-button-outline">Sign up</a>
+      </div>
     </div>
 
     <footer class="footer">
