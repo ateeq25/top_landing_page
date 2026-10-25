@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <main class="calculator">
+        <h1>Calculator</h1>
+
+        <div class="display" id="display" aria-live="polite">
+            0
+        </div>
+
+        <div class="buttons">
+            <button class="function" data-action="clear">C</button>
+            <button class="function" data-action="delete">DEL</button>
+            <button class="operator" data-operator="/">÷</button>
+            <button class="operator" data-operator="*">×</button>
+
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button class="operator" data-operator="-">−</button>
+
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button class="operator" data-operator="+">+</button>
+
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button class="equals" data-action="equals">=</button>
+
+            <button class="zero" data-number="0">0</button>
+            <button data-number=".">.</button>
+        </div>
+    </main>
+
+
+<div class="premium-modal hidden" id="premiumModal">
+    <div class="premium-card">
+        <button class="close-button" id="closeModal" aria-label="Close">
+            &times;
+        </button>
+
+        <div class="premium-icon">👑</div>
+
+        <p class="premium-label">CALCULATOR PREMIUM</p>
+        <h2>Your answer is ready.</h2>
+
+        <p class="premium-message">
+            Unfortunately, basic arithmetic is no longer free.
+        </p>
+
+        <div class="fake-price">
+            <span>Premium access</span>
+            <strong>₦9,999<span>/month</span></strong>
+        </div>
+
+        <button class="upgrade-button" id="upgradeButton">
+            Unlock My Answer
+        </button>
+
+        <p class="premium-footnote">
+            Your calculations are safe. Your wallet, however...
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
